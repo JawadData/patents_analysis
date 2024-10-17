@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.17, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.17, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="static/assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="static/CSS/mobirise2.css">
+  <link rel="stylesheet" href="static/CSS/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/CSS/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="static/CSS/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="static/CSS/dropdown/css/style.css">
+  <link rel="stylesheet" href="static/CSS/socicon/css/styles.css">
+  <link rel="stylesheet" href="static/CSS/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="static/CSS/mbr-additional.css?v=8Balnb"><link rel="stylesheet" href="static/CSS/mbr-additional.css?v=8Balnb" type="text/css">
+  <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .image-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-wrapper img {
+        height: 100%;
+        width: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the screen */
+        border-radius: 20px; /* Adjust the value to change the roundness */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better visibility */
+        margin-left: -10px; /* Move the title to the right */
+        margin-top: -50px;
+    }
+    .mbr-section-title {
+            font-size: 55px; /* Lowering the font size */
+            margin-top: -45px; /* Adjust the top margin as needed */
+            margin-bottom: 40px; /* Add space below the title */
+            margin-left: -35px; /* Move the title to the right */
+
+    }
+
+    .button-wrapper {
+            position: relative; /* Added relative positioning */
+            top: -95px; /* Adjust the value to move the button up */
+            left: 870px; /* Move the button to the right */
+            font-size: 20px; /* Adjust button font size */
+            padding: 10px 20px; /* Adjust button padding */
+            border: 1px solid black; /* Button border color */
+            background-color: #ffffff; /* Button background color */
+            color: rgb(0, 0, 0); /* Button text color */
+            border-radius: 25px; /* Adjust the value to change the roundness */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 15%; /* Set button width */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline from text */
+            display: inline-block; /* Display as inline-block */
+        }
+        .button-wrapper:hover {
+            background-color: #000000; /* Darker button color on hover */
+            color: white; /* Change text color on hover */
+        }
+</style>
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-sFCw1qGFAI" once="menu" id="menu2-23">
+    
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="">PatentGenius</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#top">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#header14-1j">About</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#team1-1o">Team</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts2-1r">Contacts</a></li></ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header14 cid-sFzxmVl7J6" id="header14-1f">
+    <div class="container">
+        <div class="text-wrapper">
+            <h1 class="mbr-section-title mbr-fonts-style display-1"><strong>Google Patents</strong></h1>
+            <a href="{{ url_for('GP') }}" class="button-wrapper">Show Data</a>
+            <a href="{{ url_for('LOADGP') }}" class="button-wrapper">Load Data</a>
+        </div>
+        <div class="image-wrapper">
+            <img src="static/IMAGES/Houda.png" alt="Full Screen Image with Rounded Edges">
+        </div>
+    </div>
+</section>
