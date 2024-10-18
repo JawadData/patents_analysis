@@ -22,17 +22,12 @@ This architecture diagram outlines the workflow of the patent analysis project. 
 ## Setup Instructions
 
 
-1. **setup the MySQLdb**: after cloneing the repo .  change the registeatioj info for my sql db in "GUI/register.py" file .
-
-2. **Execution**:.
-
-3. **Export the Repository**: After executing the notebook, the modifications will be automatically saved to the repository on your Google Drive. You can then export this repository.
-
-4. **Run the Application**: Using a terminal, navigate to the extracted repository, then enter the "flask" directory. Run the following command to start the application:  
-   ```bash
-   python app.py
+1.  git clone https://github.com/JawadData/patents_analysis.git .
+2.  open the diracory in the vs code or other
+3.  navigate to GUI/register.py 
+4.  change the registration info  of mysql db in the register. py file
+5.  open the terminal
+6.  cd GUI/register.py
+7.  python register.py
 ---
 
-## Future Improvements
-- Automate the retraining process using Airflow.
-- Deploy the app via a cloud provider (e.g., AWS).
