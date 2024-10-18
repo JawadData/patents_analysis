@@ -8,14 +8,13 @@ app = Flask(__name__)
 db_config = {
     "host": "localhost",
     "user": "root",
-    "password": "id1fs",
-    "database": "patent"  # Replace with your database name
+    "password": "...",
+    "database": "..."  # Replace with your database name
 }
 
 conn = mysql.connector.connect(**db_config)
 cursor = conn.cursor()
 
-# SQL statement to create the Users table
 create_table_query = """
 CREATE TABLE IF NOT EXISTS Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -27,7 +26,6 @@ CREATE TABLE IF NOT EXISTS Users (
 );
 """
 
-# Execute the create table query
 cursor.execute(create_table_query)
 conn.commit()
 
@@ -94,46 +92,46 @@ def WIPO_DASH():
 
 @app.route('/LOADESP')
 def LOADESP():
-    # Path to the CSV file
+    
     csv_file_path = 'data\\datasets\\ES.csv'
 
-    # Send the file to the user
+   
     return send_file(csv_file_path, as_attachment=True)
 
 
 @app.route('/LOADGP')
 def LOADGP():
-    # Path to the CSV file
+    
     csv_file_path = 'data\\datasets\\GP.csv'
 
-    # Send the file to the user
+    
     return send_file(csv_file_path, as_attachment=True)
 
 
 @app.route('/LOADWIPO')
 def LOADWIPO():
-    # Path to the CSV file
+    
     csv_file_path = 'data\\datasets\\WIPO.csv'
 
-    # Send the file to the user
+    
     return send_file(csv_file_path, as_attachment=True)
 
 
 @app.route('/LOADFPO')
 def LOADFPO():
-    # Path to the CSV file
+    
     csv_file_path = 'data\\datasets\\FPO.csv'
 
-    # Send the file to the user
+    
     return send_file(csv_file_path, as_attachment=True)
 
 
 @app.route('/LOADCND')
 def LOADCND():
-    # Path to the CSV file
+    
     csv_file_path = 'data\\datasets\\CND.xlsx'
 
-    # Send the file to the user
+    
     return send_file(csv_file_path, as_attachment=True)
 
 
@@ -145,13 +143,13 @@ def register():
     password = request.form['password']
 
     cursor = conn.cursor()
-    # Check if user already exists
+    
     query_check_user = "SELECT COUNT(*) FROM Users WHERE FirstName = %s OR LastName = %s OR Email = %s"
     cursor.execute(query_check_user, (firstname, lastname, email))
     result = cursor.fetchone()
 
     if result[0] > 0:
-        # User already exists
+        
         cursor.close()
         message = "User Already Exists"
         success = False
@@ -188,12 +186,12 @@ def login():
     result = cursor.fetchone()
 
     if result[0] > 0:
-        # User exists and password is correct
+        
         cursor.close()
         message = "Login successful"
         success = True
     else:
-        # User does not exist or password is incorrect
+        
         cursor.close()
         message = "Invalid username/email or password"
         success = False
