@@ -5,7 +5,7 @@ Welcome to the Patent Analysis Project! This initiative is dedicated to building
 ---
 
 ## Project Architecture
-![Project Architecture](architecture-diagram.png)
+![Project Architecture](architecture.jpg)
 
 ---
 
