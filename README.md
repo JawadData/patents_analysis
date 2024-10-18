@@ -34,3 +34,14 @@ Follow these steps to set up the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/JawadData/patents_analysis.git
+   
+2. Open the directory in your preferred code editor (e.g., Visual Studio Code).
+3. Navigate to the GUI/register.py file.
+4. Update the registration information for the MySQL database in the register.py file.
+5. Open a terminal window.
+6. Change to the GUI directory:
+   ```bash
+   cd GUI
+7. Run the registration script:
+   python register.py
+
