@@ -1,4 +1,4 @@
-# Patent Analysis Project
+## Patent Analysis Project
 
 Welcome to the Patent Analysis Project! This initiative is dedicated to building a robust data pipeline that extracts patents from various sources, analyzes the data using Apache Spark, and presents insightful visualizations through a user-friendly dashboard created with Flask.
 
