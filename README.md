@@ -14,16 +14,17 @@ This architecture diagram outlines the workflow of the patent analysis project. 
 2. **load the data**: load the data that came from diferent source into mongo db database.
 3. **transform the data**: using spark et specialy py spark to analyse the data and stondarise the data from difirent source to create a combined data source unified and analyse it.
 4. **load data**: reload data after tyransformation into mongo db cloud.
-5. **Additional Data Processing**: The predictions from the regression models are integrated into the original Parquet file to generate new rules for the next day's predictions, which are then used as input for the classification model.
-6. **Second Output**: Predictions from the classification model (Buy/Sell actions) are also stored in JSON format for easy access.
-7. **Web Interface**: A Flask-based web application provides users with an interactive interface to view the predictions.
----
+5. **visualise the data**: visualise the data using power bi and tableua.
+6. **integrat flask**: create a user friendly app to manae the user's using my sql as database for web app.
+7. ---
+8. 
 
 ## Setup Instructions
 
-1. **Repository Location**: Upload the repository to the "My Drive" section of your Google Drive account. Ensure that you are using the same account you log in to Google Colab with.
 
-2. **Notebook Execution**: Import the notebook named "run_me" into Colab and execute it. This will train the models and automatically save the results.
+1. **setup the MySQLdb**: after cloneing the repo .  change the registeatioj info for my sql db in "GUI/register.py" file .
+
+2. **Execution**:.
 
 3. **Export the Repository**: After executing the notebook, the modifications will be automatically saved to the repository on your Google Drive. You can then export this repository.
 
